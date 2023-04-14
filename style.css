@@ -106,18 +106,6 @@ header:hover .Top_Divider_Logo {
   transition: all .66s ease-in-out;
 }
 
-@media (max-width:767.98px) {
-  .HeroContent {
-    height: calc(100vh - 89.6px);
-  }
-}
-
-@media (max-width:575.98px) {
-  .HeroContent {
-    height: calc(80vh - 89.6px);
-  }
-}
-
 #Projects {
   height: 897px;
 }
@@ -203,9 +191,57 @@ header:hover .Top_Divider_Logo {
 }
 
 @media (max-width:991.98px) {
+
   #carouselExampleControls {
     max-width: 100vw;
   }
+  footer .list-inline-item {
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width:767.98px) {
+
+  .HeroContent {
+    height: calc(100vh - 89.6px);
+  }
+  #Projects {
+    height: calc(80vh);
+  }
+
+}
+
+@media (max-width:575.98px) {
+
+  .HeroContent {
+    height: calc(80vh - 89.6px);
+  }
+  .display-1 {
+    font-size: calc(1rem + 4vw) !important;
+  }
+  .SocialIcons {
+    transform: scale(0.75) !important;
+  }
+  .lh-base {
+    font-size: calc(.5rem + .75vw) !important;
+  }
+  #Expand {
+    transform: scale(0.3) !important;
+  }
+  #Projects {
+    height: calc(80vh);
+  }
+  .carousel-control-prev {
+    transform: scale(0.5);
+  }
+  .carousel-control-next {
+    transform: scale(0.5);
+  }
+  footer .list-inline-item {
+    text-align: left !important;
+  }
+
 }
 
 /* Footer */
@@ -217,7 +253,7 @@ footer {
 }
 
 #Footer {
-  width: 1920px;
+  max-width: 1920px;
 }
 
 footer:hover, footer:hover a {
@@ -240,7 +276,7 @@ footer a:hover {
 @media (min-width:1444.95px) {
   #Contact1445Align {
   text-align: end !important;
-  padding-right: 112px;
+  padding-right: 152px;
   }
   #ContactIcons1445Align {
     justify-content: end !important;
