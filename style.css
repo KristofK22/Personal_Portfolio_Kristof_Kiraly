@@ -1,29 +1,29 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
+/* Personal Portfolio - Kristof Kiraly - 2023 */
+
+:root {
+  background-color: black;
 }
 
 body {
+  background-color: black !important;
+  color: #ffffff !important;
   min-height: 100vh;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #000000;
-  color:#fff
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
 
 .Navbar {
-  overflow-x: hidden; 
   font-family: 'Helvetica Neue 700', sans-serif;
   background-color: #000000;
   color: #fff;
   padding: 0;
   margin-bottom: 24px;
+  overflow-x: hidden;
 }
 
 @keyframes FadeInTitle {
@@ -51,17 +51,17 @@ header:hover .Top_Divider_Logo {
   box-shadow: 0px 0px 5px 3px #00907b;
 }
 
-.navbar-nav:focus .nav-link, .navbar-nav:hover .nav-link {
+.navbar-nav:focus .nav-link button, .navbar-nav:hover .nav-link button {
   color: #767676;
 }
 
-.nav-link {
+.nav-link button {
   font-family: 'Helvetica 65 Medium 700', sans-serif;
   color: #fff;
   text-decoration: none;
 }
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus button, .nav-link:hover button {
   color:#fff !important;
   text-decoration: none;
 }
@@ -86,6 +86,8 @@ header:hover .Top_Divider_Logo {
   animation-iteration-count: 1;
 }
 
+
+
 /* Hero Content */
 
 .HeroScroll {
@@ -99,7 +101,7 @@ header:hover .Top_Divider_Logo {
 
 .HeroContent {
   color:#000000;
-  height: calc(100vh - 162px);
+  height: calc(100vh - 10rem);
   max-height: 100%;
   max-width: 100%;
   background-image: radial-gradient(circle, #f0f1f5, #e9eaee, #e3e4e8, #dcdde1, #d6d7db, #cfd0d4, #c9cace, #c2c3c7, #bababf, #b2b2b6, #aaa9ae, #a2a1a6);
@@ -108,6 +110,12 @@ header:hover .Top_Divider_Logo {
 
 #Projects {
   height: 897px;
+}
+
+#ProfilePic {
+  font-size: 16px;
+  max-width: 30em;
+  max-height: 30em;
 }
 
 .ContentDivider {
@@ -119,7 +127,8 @@ header:hover .Top_Divider_Logo {
 
 .HeroIntroBaseBar {
   height: 2px;
-  width: 403.6px;
+  width: 26rem;
+  max-width: 70vw;
   background-color: #0a3730bf;
   border-radius: 90%;
   box-shadow: 0px 0px 10px 2px #31cfb7bf;
@@ -244,16 +253,20 @@ header:hover .Top_Divider_Logo {
 
 }
 
+@media (max-width: 526.98px) {
+  #ProfilePic {
+    max-width: 18em;
+    max-height: 18em;
+  }
+}
+
+
+
 /* Footer */
 
 footer {
-  max-width: 1920px;
   overflow-x: hidden; 
   color: #767676;
-}
-
-#Footer {
-  max-width: 1920px;
 }
 
 footer:hover, footer:hover a {
